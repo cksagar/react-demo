@@ -5,25 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
-    <title>Hello world!!!!</title>
+    <title>React Demo App!!!!</title>
 </head>
 
 <body>
-    <div>Top of root</div>
-    <div id="hii"></div>
-    <!-- By javaScript -->
-    <script>
-        const heading = document.createElement("h1");
-        heading.innerHTML = "Hello world from javaScript!"
-        const root = document.getElementById('hii');
-        root.appendChild(heading);
-    </script>
-    <div>bottom of rooot</div>
-    <!-- By React  -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <div id="root"></div>
 
-    <script src="./App.js"></script>
+    <!-- react render -->
+    <script type="module" src="./src/App.js"></script>
 </body>
 
 </html>

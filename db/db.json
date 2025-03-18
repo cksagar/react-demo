@@ -1,0 +1,124 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "The Food House",
+      "cuisine": ["Indian", "Chinese"],
+      "rating": 3.5,
+      "deliveryTime": "30 mins",
+      "image": "https://picsum.photos/400/300?random=1"
+    },
+    {
+      "id": 2,
+      "name": "Burger Hub",
+      "cuisine": ["American", "Fast Food"],
+      "rating": 3.2,
+      "deliveryTime": "25 mins",
+      "image": "https://via.placeholder.com/400x300.png?text=Burger+Hub"
+    },
+    {
+      "id": 3,
+      "name": "Pizza Paradise",
+      "cuisine": ["Italian", "Pizza"],
+      "rating": 4.7,
+      "deliveryTime": "40 mins",
+      "image": "https://picsum.photos/400/300?random=2"
+    },
+    {
+      "id": 4,
+      "name": "Tandoori Treats",
+      "cuisine": ["Indian", "Mughlai"],
+      "rating": 3.6,
+      "deliveryTime": "35 mins",
+      "image": "https://via.placeholder.com/400x300.png?text=Tandoori+Treats"
+    },
+    {
+      "id": 5,
+      "name": "Sushi Delight",
+      "cuisine": ["Japanese", "Sushi"],
+      "rating": 4.8,
+      "deliveryTime": "45 mins",
+      "image": "https://picsum.photos/400/300?random=3"
+    },
+    {
+      "id": 6,
+      "name": "Taco Fiesta",
+      "cuisine": ["Mexican", "Tacos"],
+      "rating": 4.3,
+      "deliveryTime": "20 mins",
+      "image": "https://via.placeholder.com/400x300.png?text=Taco+Fiesta"
+    },
+    {
+      "id": 7,
+      "name": "Healthy Bites",
+      "cuisine": ["Salads", "Healthy"],
+      "rating": 4.5,
+      "deliveryTime": "30 mins",
+      "image": "https://picsum.photos/400/300?random=4"
+    },
+    {
+      "id": 8,
+      "name": "Biryani Bliss",
+      "cuisine": ["Indian", "Biryani"],
+      "rating": 4.9,
+      "deliveryTime": "50 mins",
+      "image": "https://via.placeholder.com/400x300.png?text=Biryani+Bliss"
+    },
+    {
+      "id": 9,
+      "name": "Pasta Heaven",
+      "cuisine": ["Italian", "Pasta"],
+      "rating": 4.4,
+      "deliveryTime": "28 mins",
+      "image": "https://picsum.photos/400/300?text=Pasta+Heaven"
+    },
+    {
+      "id": 10,
+      "name": "Kebab Kingdom",
+      "cuisine": ["Middle Eastern", "Kebabs"],
+      "rating": 4.7,
+      "deliveryTime": "38 mins",
+      "image": "https://via.placeholder.com/400x300.png?text=Kebab+Kingdom"
+    },
+    {
+      "id": 11,
+      "name": "Dessert Haven",
+      "cuisine": ["Desserts", "Bakery"],
+      "rating": 4.6,
+      "deliveryTime": "15 mins",
+      "image": "https://picsum.photos/400/300?random=6"
+    },
+    {
+      "id": 12,
+      "name": "BBQ Express",
+      "cuisine": ["American", "BBQ"],
+      "rating": 4.3,
+      "deliveryTime": "40 mins",
+      "image": "https://via.placeholder.com/400x300.png?text=BBQ+Express"
+    },
+    {
+      "id": 13,
+      "name": "Wok & Roll",
+      "cuisine": ["Chinese", "Thai"],
+      "rating": 4.2,
+      "deliveryTime": "35 mins",
+      "image": "https://picsum.photos/400/300?random=7"
+    },
+    {
+      "id": 14,
+      "name": "Vegan Vibes",
+      "cuisine": ["Vegan", "Healthy"],
+      "rating": 4.9,
+      "deliveryTime": "32 mins",
+      "image": "https://via.placeholder.com/400x300.png?text=Vegan+Vibes"
+    },
+    {
+      "id": 15,
+      "name": "Seafood Shack",
+      "cuisine": ["Seafood", "Grill"],
+      "rating": 4.8,
+      "deliveryTime": "50 mins",
+      "image": "https://picsum.photos/400/300?random=8"
+    }
+  ]
+}
