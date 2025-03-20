@@ -1,12 +1,14 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, { promotedRestaurantcard } from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import RestaurantFilter from "./RestaurantFilter";
+
 const Body = () => {
   const [restaurantList, setRestaurantsList] = useState([]);
   const [searchText, setSerchText] = useState("");
 
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
+  const PromotedRestaurantCard = promotedRestaurantcard(RestaurantCard);
 
   useEffect(() => {
     fetchData();
@@ -64,7 +66,11 @@ const Body = () => {
       <div className="p-4 m-4 flex flex-wrap">
         {filteredRestaurants.map((restaurant) => (
           <Link key={restaurant.id} to={"/restaurant/" + restaurant.id}>
-            <RestaurantCard resData={restaurant} />
+            {restaurant.promoted ? (
+              <PromotedRestaurantCard resData={restaurant} />
+            ) : (
+              <RestaurantCard resData={restaurant} />
+            )}
           </Link>
         ))}
       </div>
