@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Body from "./components/Body";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
@@ -13,10 +14,14 @@ const About = lazy(() => import("./components/About"));
 
 const AppLayout = () => {
   return (
-    <div className="app">
+    <div className="flex flex-col min-h-screen">
       <Header />
       {/* where dynamic component loads */}
-      <Outlet />
+      <div className="flex-grow">
+        <Outlet />
+      </div>
+
+      <Footer />
     </div>
   );
 };

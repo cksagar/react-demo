@@ -1,16 +1,12 @@
 import RestaurantCard from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
+import RestaurantFilter from "./RestaurantFilter";
 const Body = () => {
   const [restaurantList, setRestaurantsList] = useState([]);
-  const [filteredRestaurants, setFilteredRestaurants] = useState([]);
-
   const [searchText, setSerchText] = useState("");
 
-  const filterByRating = () => {
-    setFilteredRestaurants(restaurantList.filter((res) => res.rating >= 4));
-  };
+  const [filteredRestaurants, setFilteredRestaurants] = useState([]);
 
   useEffect(() => {
     fetchData();
@@ -23,13 +19,21 @@ const Body = () => {
     setFilteredRestaurants(restaurants);
   };
 
+  const handleFilterToggle = (isFiltered) => {
+    if (isFiltered) {
+      setFilteredRestaurants(restaurantList.filter((res) => res.rating >= 4));
+    } else {
+      setFilteredRestaurants(restaurantList);
+    }
+  };
+
   return (
     <div className="body">
-      <div className="filter">
-        <div className="search">
+      <div className="flex items-center justify-evenly">
+        <div className="search m-4 p-4">
           <input
             type="text"
-            className="search-input"
+            className="w-72 m-2 px-4 py-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:focus:ring-blue-400 transition"
             placeholder="Search for Restaurants"
             value={searchText}
             onChange={(event) => {
@@ -37,6 +41,7 @@ const Body = () => {
             }}
           />
           <button
+            className="px-4 py-1 bg-green-100 rounded-lg"
             onClick={() => {
               const filteredRestaurant = restaurantList.filter((res) => {
                 return res.name
@@ -49,11 +54,14 @@ const Body = () => {
             Search
           </button>
         </div>
-        <button className="filter-btn" onClick={filterByRating}>
-          Top Rated Restaurants
-        </button>
+        <div>
+          <RestaurantFilter
+            restaurantList={filteredRestaurants}
+            onFilterToggle={handleFilterToggle}
+          />
+        </div>
       </div>
-      <div className="res-container">
+      <div className="p-4 m-4 flex flex-wrap">
         {filteredRestaurants.map((restaurant) => (
           <Link key={restaurant.id} to={"/restaurant/" + restaurant.id}>
             <RestaurantCard resData={restaurant} />
