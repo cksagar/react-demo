@@ -6,7 +6,21 @@
       "cuisine": ["Indian", "Chinese"],
       "rating": 3.5,
       "deliveryTime": "30 mins",
-      "image": "https://picsum.photos/400/300?random=1"
+      "image": "https://picsum.photos/400/300?random=1",
+      "menu": [
+        {
+          "id": 101,
+          "name": "Butter Chicken",
+          "price": 250,
+          "category": "Main Course"
+        },
+        {
+          "id": 102,
+          "name": "Veg Manchurian",
+          "price": 180,
+          "category": "Starter"
+        }
+      ]
     },
     {
       "id": 2,
@@ -14,7 +28,16 @@
       "cuisine": ["American", "Fast Food"],
       "rating": 3.2,
       "deliveryTime": "25 mins",
-      "image": "https://via.placeholder.com/400x300.png?text=Burger+Hub"
+      "image": "https://picsum.photos/400x300?text=Tandoori+Treats",
+      "menu": [
+        {
+          "id": 103,
+          "name": "Cheese Burger",
+          "price": 220,
+          "category": "Burger"
+        },
+        { "id": 104, "name": "French Fries", "price": 100, "category": "Sides" }
+      ]
     },
     {
       "id": 3,
@@ -22,7 +45,21 @@
       "cuisine": ["Italian", "Pizza"],
       "rating": 4.7,
       "deliveryTime": "40 mins",
-      "image": "https://picsum.photos/400/300?random=2"
+      "image": "https://picsum.photos/400/300?random=2",
+      "menu": [
+        {
+          "id": 105,
+          "name": "Margherita Pizza",
+          "price": 300,
+          "category": "Pizza"
+        },
+        {
+          "id": 106,
+          "name": "Pepperoni Pizza",
+          "price": 350,
+          "category": "Pizza"
+        }
+      ]
     },
     {
       "id": 4,
@@ -30,7 +67,21 @@
       "cuisine": ["Indian", "Mughlai"],
       "rating": 3.6,
       "deliveryTime": "35 mins",
-      "image": "https://via.placeholder.com/400x300.png?text=Tandoori+Treats"
+      "image": "https://via.placeholder.com/400x300.png?text=Tandoori+Treats",
+      "menu": [
+        {
+          "id": 107,
+          "name": "Tandoori Chicken",
+          "price": 400,
+          "category": "Main Course"
+        },
+        {
+          "id": 108,
+          "name": "Paneer Tikka",
+          "price": 220,
+          "category": "Starter"
+        }
+      ]
     },
     {
       "id": 5,
@@ -38,7 +89,16 @@
       "cuisine": ["Japanese", "Sushi"],
       "rating": 4.8,
       "deliveryTime": "45 mins",
-      "image": "https://picsum.photos/400/300?random=3"
+      "image": "https://picsum.photos/400/300?random=3",
+      "menu": [
+        {
+          "id": 109,
+          "name": "Salmon Sushi",
+          "price": 350,
+          "category": "Sushi"
+        },
+        { "id": 110, "name": "Miso Soup", "price": 120, "category": "Soup" }
+      ]
     },
     {
       "id": 6,
@@ -46,7 +106,11 @@
       "cuisine": ["Mexican", "Tacos"],
       "rating": 4.3,
       "deliveryTime": "20 mins",
-      "image": "https://via.placeholder.com/400x300.png?text=Taco+Fiesta"
+      "image": "https://via.placeholder.com/400x300.png?text=Taco+Fiesta",
+      "menu": [
+        { "id": 111, "name": "Beef Tacos", "price": 280, "category": "Tacos" },
+        { "id": 112, "name": "Nachos", "price": 200, "category": "Sides" }
+      ]
     },
     {
       "id": 7,
@@ -54,7 +118,16 @@
       "cuisine": ["Salads", "Healthy"],
       "rating": 4.5,
       "deliveryTime": "30 mins",
-      "image": "https://picsum.photos/400/300?random=4"
+      "image": "https://picsum.photos/400/300?random=4",
+      "menu": [
+        {
+          "id": 113,
+          "name": "Quinoa Salad",
+          "price": 250,
+          "category": "Salad"
+        },
+        { "id": 114, "name": "Fruit Bowl", "price": 200, "category": "Healthy" }
+      ]
     },
     {
       "id": 8,
@@ -62,7 +135,21 @@
       "cuisine": ["Indian", "Biryani"],
       "rating": 4.9,
       "deliveryTime": "50 mins",
-      "image": "https://via.placeholder.com/400x300.png?text=Biryani+Bliss"
+      "image": "https://via.placeholder.com/400x300.png?text=Biryani+Bliss",
+      "menu": [
+        {
+          "id": 115,
+          "name": "Chicken Biryani",
+          "price": 300,
+          "category": "Main Course"
+        },
+        {
+          "id": 116,
+          "name": "Veg Biryani",
+          "price": 250,
+          "category": "Main Course"
+        }
+      ]
     },
     {
       "id": 9,
@@ -70,7 +157,16 @@
       "cuisine": ["Italian", "Pasta"],
       "rating": 4.4,
       "deliveryTime": "28 mins",
-      "image": "https://picsum.photos/400/300?text=Pasta+Heaven"
+      "image": "https://picsum.photos/400/300?text=Pasta+Heaven",
+      "menu": [
+        {
+          "id": 117,
+          "name": "Penne Alfredo",
+          "price": 260,
+          "category": "Pasta"
+        },
+        { "id": 118, "name": "Garlic Bread", "price": 120, "category": "Sides" }
+      ]
     },
     {
       "id": 10,
@@ -78,7 +174,21 @@
       "cuisine": ["Middle Eastern", "Kebabs"],
       "rating": 4.7,
       "deliveryTime": "38 mins",
-      "image": "https://via.placeholder.com/400x300.png?text=Kebab+Kingdom"
+      "image": "https://via.placeholder.com/400x300.png?text=Kebab+Kingdom",
+      "menu": [
+        {
+          "id": 119,
+          "name": "Lamb Kebabs",
+          "price": 400,
+          "category": "Main Course"
+        },
+        {
+          "id": 120,
+          "name": "Hummus & Pita",
+          "price": 180,
+          "category": "Starter"
+        }
+      ]
     },
     {
       "id": 11,
@@ -86,39 +196,16 @@
       "cuisine": ["Desserts", "Bakery"],
       "rating": 4.6,
       "deliveryTime": "15 mins",
-      "image": "https://picsum.photos/400/300?random=6"
-    },
-    {
-      "id": 12,
-      "name": "BBQ Express",
-      "cuisine": ["American", "BBQ"],
-      "rating": 4.3,
-      "deliveryTime": "40 mins",
-      "image": "https://via.placeholder.com/400x300.png?text=BBQ+Express"
-    },
-    {
-      "id": 13,
-      "name": "Wok & Roll",
-      "cuisine": ["Chinese", "Thai"],
-      "rating": 4.2,
-      "deliveryTime": "35 mins",
-      "image": "https://picsum.photos/400/300?random=7"
-    },
-    {
-      "id": 14,
-      "name": "Vegan Vibes",
-      "cuisine": ["Vegan", "Healthy"],
-      "rating": 4.9,
-      "deliveryTime": "32 mins",
-      "image": "https://via.placeholder.com/400x300.png?text=Vegan+Vibes"
-    },
-    {
-      "id": 15,
-      "name": "Seafood Shack",
-      "cuisine": ["Seafood", "Grill"],
-      "rating": 4.8,
-      "deliveryTime": "50 mins",
-      "image": "https://picsum.photos/400/300?random=8"
+      "image": "https://picsum.photos/400/300?random=6",
+      "menu": [
+        {
+          "id": 121,
+          "name": "Chocolate Cake",
+          "price": 150,
+          "category": "Dessert"
+        },
+        { "id": 122, "name": "Cheesecake", "price": 200, "category": "Dessert" }
+      ]
     }
   ]
 }
